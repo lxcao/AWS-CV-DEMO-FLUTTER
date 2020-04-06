@@ -1,3 +1,4 @@
+import 'package:cv_car_mobile_app_layout_flutter/models/vehicle_model.dart';
 import 'package:cv_car_mobile_app_layout_flutter/screens/vehicle_location.dart';
 import 'package:cv_car_mobile_app_layout_flutter/util/about.dart';
 import 'package:cv_car_mobile_app_layout_flutter/util/colors.dart';
@@ -5,7 +6,8 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class HomeScrollScreen extends StatefulWidget {
-  HomeScrollScreen({Key key}) : super(key: key);
+  final Vehicle vehicle;
+  HomeScrollScreen({this.vehicle});
 
   @override
   _HomeScrollScreenState createState() => _HomeScrollScreenState();
@@ -32,7 +34,7 @@ class _HomeScrollScreenState extends State<HomeScrollScreen> {
             iconTheme: IconThemeData(color: blackAccentColor),
             centerTitle: false,
             title: Text(
-              '001号车',
+              widget.vehicle.mode,
               style: TextStyle(
                   color: darkSecondColor,
                   fontWeight: FontWeight.bold,
@@ -64,8 +66,8 @@ class _HomeScrollScreenState extends State<HomeScrollScreen> {
               ),
             ],
             flexibleSpace: FlexibleSpaceBar(
-              titlePadding: EdgeInsets.only(top: 150.0),
-              title: Image.asset("assets/images/lamborghini_yellow.png"),
+              titlePadding: EdgeInsets.only(top: 130.0),
+              title: Image.asset(widget.vehicle.imageUrl),
 /*               title: Padding(
                 padding: EdgeInsets.only(top: 130.0),
                 child: Container(
@@ -489,7 +491,7 @@ class _HomeScrollScreenState extends State<HomeScrollScreen> {
       subtitle: Text(APP_VERSION),
       trailing: IconButton(
         icon: Icon(Icons.info),
-        onPressed: () => print('verison'),
+        onPressed: () => print('version'),
       ),
     ),
     Divider(),
