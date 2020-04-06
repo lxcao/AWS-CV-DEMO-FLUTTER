@@ -1,8 +1,12 @@
-# cv_car_mobile_app_layout_flutter
+# AWS Connected Vehicle Demo Flutter
 
-A new Flutter project.
+A Flutter project for AWS CV Demo mobile app
 
 ## Getting Started
+
+This project is a demo for the AWS CV mobile app.
+
+## Reference
 
 This project is a starting point for a Flutter application.
 
