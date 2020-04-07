@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:cv_car_mobile_app_layout_flutter/models/vehicle_model.dart';
 import 'package:cv_car_mobile_app_layout_flutter/screens/home_scroll_screen.dart';
 import 'package:cv_car_mobile_app_layout_flutter/util/about.dart';
@@ -151,7 +153,7 @@ class _CoverScreenState extends State<CoverScreen> {
                   Icons.close,
                   color: blackAccentColor,
                 ),
-                onPressed: () {},
+                onPressed: () => exit(0),
               ),
             ),
             SizedBox(
