@@ -157,7 +157,7 @@ class _CoverScreenState extends State<CoverScreen> {
             SizedBox(
               height: 15.0,
             ),
-            CAppIcon,
+            cAppIcon,
             SizedBox(
               height: 10.0,
             ),

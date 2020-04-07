@@ -8,7 +8,7 @@ final kAppIcon = Image.asset(
   height: 64.0,
   width: 64.0,
 );
-final CAppIcon = Image.asset(
+final cAppIcon = Image.asset(
   'assets/images/aws_logo_white.png',
   height: 150.0,
   width: 150.0,
