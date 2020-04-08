@@ -6,7 +6,12 @@ A Flutter project for AWS CV Demo mobile app
 
 This project is a demo for the AWS CV mobile app.
 
-//TODO: add more descriptions here
+## Preview
+
+![](screenshots/coverPage.png)
+![](screenshots/homePage.png)
+![](screenshots/drawerPage.png)
+![](screenshots/locationPage.png)
 
 ## Reference
 
