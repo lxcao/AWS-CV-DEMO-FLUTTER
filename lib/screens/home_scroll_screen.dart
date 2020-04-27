@@ -66,7 +66,7 @@ class _HomeScrollScreenState extends State<HomeScrollScreen> {
               ),
             ],
             flexibleSpace: FlexibleSpaceBar(
-              titlePadding: EdgeInsets.only(top: 130.0),
+              titlePadding: EdgeInsets.only(top: 120.0, left: 120.0),
               title: Hero(
                 tag: widget.vehicle.imageUrl,
                 child: Image.asset(widget.vehicle.imageUrl),

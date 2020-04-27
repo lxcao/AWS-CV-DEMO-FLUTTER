@@ -157,16 +157,16 @@ class _CoverScreenState extends State<CoverScreen> {
               ),
             ),
             SizedBox(
-              height: 15.0,
+              height: 5.0,
             ),
             cAppIcon,
             SizedBox(
-              height: 10.0,
+              height: 5.0,
             ),
             Text(
               '车联网演示',
               style: TextStyle(
-                  fontSize: 54,
+                  fontSize: 40,
                   fontWeight: FontWeight.bold,
                   color: blackAccentColor),
             ),
@@ -205,7 +205,7 @@ class _CoverScreenState extends State<CoverScreen> {
             //Image.asset(_vehiclesImages[Vehicles.bmw_x5],fit: BoxFit.cover, height: 150.0),
             //_buildPageView(),
             Container(
-              height: 400.0,
+              height: 350.0,
               width: double.infinity,
               child: PageView.builder(
                 controller: _pageController,
@@ -215,11 +215,11 @@ class _CoverScreenState extends State<CoverScreen> {
                 },
               ),
             ),
-            Container(
-              height: 0.5,
-              color: Colors.white,
+            Divider(
+              color: blackAccentColor,
+              thickness: 2.0,
             ),
-            SizedBox(height: 80.0),
+            SizedBox(height: 60.0),
             Text(
               '有任何问题请随时联系工作人员',
               style: TextStyle(

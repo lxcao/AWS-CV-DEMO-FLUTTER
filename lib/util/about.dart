@@ -10,8 +10,8 @@ final kAppIcon = Image.asset(
 );
 final cAppIcon = Image.asset(
   'assets/images/aws_logo_white.png',
-  height: 150.0,
-  width: 150.0,
+  height: 100.0,
+  width: 100.0,
 );
 const APP_DESCRIPTION =
     'An app showcasing AWS Connected Vehicle Solution, with '
